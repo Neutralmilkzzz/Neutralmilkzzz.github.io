@@ -971,3 +971,7 @@ enableEmoji = true
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
