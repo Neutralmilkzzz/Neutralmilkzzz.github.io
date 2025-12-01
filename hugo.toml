@@ -244,7 +244,7 @@ enableEmoji = true
       # 应用图标配置
       [languages.zh-cn.params.app]
         # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-        title = "xxx's Blog"
+        title = "isaac's Blog"
         # 是否隐藏网站图标资源链接
         noFavicon = false
         # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
@@ -386,7 +386,7 @@ enableEmoji = true
       # App icon config
       [languages.fr.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
-        title = "xxx's Blog"
+        title = "isaac's Blog"
         # whether to omit favicon resource links
         noFavicon = false
         # modern SVG favicon to use in place of older style .png and .ico files
@@ -492,7 +492,7 @@ enableEmoji = true
       logo = ""
       # title name
       # 标题名称
-      name = "xxx's Blog"
+      name = "isaac's Blog"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = "<i class='fas fa-heart fa-fw'></i>"
@@ -793,7 +793,7 @@ enableEmoji = true
       # Publisher info
       # 出版者信息
       [params.page.seo.publisher]
-        name = "xxxx"
+        name = "isaac"
         logoUrl = "/images/avatar.jpg"
 
   # TypeIt config
