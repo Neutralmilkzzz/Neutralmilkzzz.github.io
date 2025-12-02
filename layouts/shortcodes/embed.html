@@ -1,0 +1,17 @@
+{{ $src := .Get "src" }}
+{{ $width := .Get "width" | default "100%" }}
+{{ $height := .Get "height" | default "auto" }}
+
+<figure class="embed-container">
+    <iframe 
+        frameborder="no" 
+        marginwidth="0" 
+        marginheight="0" 
+        width="{{ $width }}" 
+        height="{{ $height }}" 
+        src="{{ $src }}"
+        loading="lazy"
+        allowfullscreen
+    >
+    </iframe>
+</figure>
