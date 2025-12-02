@@ -4,8 +4,7 @@ draft = false
 title = '転がる岩、君に朝が降る'
 +++
 
-{{< netease-cloud-music 1978593877 song true "Forget (Slowed Down) - Storm Lake" >}}
-
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=1&id=155874451&auto=1&height=90"></iframe>
 翻转岩石，晨光洒落你身
 
 出来れば世界を僕は塗り変えたい
