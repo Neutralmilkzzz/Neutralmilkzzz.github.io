@@ -6,7 +6,7 @@ categories = ['还是要学习一个']
 +++
 虽然HKU CS大一用到github的机会不多，但是早点掌握肯定不是个坏事。
 MIT大名鼎鼎的Missing Semester里就有一节课讲了git和版本控制
-{{<bilibili BV1x7411H7 6 >}}
+{{<bilibili id="BV1xx411Y7C1" p="6" >}}
 但是根据我对本篇博客的受众的推测(假定真的有受众)，多半是还没搞明白git和版本控制到底有啥用，所以我要开始碎碎念了。
 # 碎碎念
 我真正意识到需要版本控制的经历来自于玩polymarket。
