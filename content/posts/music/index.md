@@ -4,7 +4,10 @@ draft = false
 title = '転がる岩、君に朝が降る'
 +++
 
-{{< audio_player "yoru.mp3" >}}
+<audio controls>
+    <source src="/audio/yoru.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+</audio>
 
 翻转岩石，晨光洒落你身
 
