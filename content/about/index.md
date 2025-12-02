@@ -1,6 +1,6 @@
 +++
 date = '2025-12-02T15:16:39+08:00'
-draft = true
+draft = false
 title = 'About Isaac'
 +++
 ## 个人履历
