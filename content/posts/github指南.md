@@ -1,8 +1,9 @@
 +++
 date = '2025-12-02T19:19:16+08:00'
 draft = false
-title = 'Github指南'
+title = 'Github指南：0'
 categories = ['还是要学习一个']
+tags = ['github','git']
 +++
 虽然HKU CS大一用到github的机会不多，但是早点掌握肯定不是个坏事。
 MIT大名鼎鼎的Missing Semester里就有一节课讲了git和版本控制
