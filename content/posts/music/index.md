@@ -3,7 +3,7 @@ date = '2025-12-02T11:14:49+08:00'
 draft = false
 title = '転がる岩、君に朝が降る'
 +++
-{{< embed src="https://music.163.com/outchain/player?type=0&id=17505820768&auto=1&height=90" width="330" height="110" >}}
+{{< music src="https://music.163.com/#/playlist?id=17505820768" >}}
 
 翻转岩石，晨光洒落你身
 
