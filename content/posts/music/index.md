@@ -3,11 +3,8 @@ date = '2025-12-02T11:14:49+08:00'
 draft = false
 title = '転がる岩、君に朝が降る'
 +++
-{{ with .Resources.Get "yoru.mp3" }}
-    <audio controls>
-        <source src="{{ .RelPermalink }}" type="{{ .MediaType.Type }}">
-    </audio>
-{{ end }}
+
+{{< audio_player "yoru.mp3" >}}
 
 翻转岩石，晨光洒落你身
 
