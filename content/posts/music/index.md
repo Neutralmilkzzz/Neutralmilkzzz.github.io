@@ -1,6 +1,6 @@
 +++
 date = '2025-12-02T11:14:49+08:00'
-draft = true
+draft = false
 title = '転がる岩、君に朝が降る'
 +++
 {{ with .Resources.Get "yoru.mp3" }}
