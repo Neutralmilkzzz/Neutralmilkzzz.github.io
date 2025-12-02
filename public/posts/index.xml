@@ -3,22 +3,28 @@
         <title>所有文章 - Isaac&#39;s Blog</title>
         <link>Neutralmilkzzz.github.io/posts/</link>
         <description>所有文章 | Isaac&#39;s Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 01 Dec 2025 17:15:24 &#43;0800</lastBuildDate><atom:link href="Neutralmilkzzz.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>我的新博客</title>
-    <link>Neutralmilkzzz.github.io/%E6%88%91%E7%9A%84%E6%96%B0%E5%8D%9A%E5%AE%A2/</link>
-    <pubDate>Mon, 01 Dec 2025 17:15:24 &#43;0800</pubDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 02 Dec 2025 11:14:49 &#43;0800</lastBuildDate><atom:link href="Neutralmilkzzz.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>転がる岩、君に朝が降る</title>
+    <link>Neutralmilkzzz.github.io/music/</link>
+    <pubDate>Tue, 02 Dec 2025 11:14:49 &#43;0800</pubDate>
     <author>xxxx</author>
-    <guid>Neutralmilkzzz.github.io/%E6%88%91%E7%9A%84%E6%96%B0%E5%8D%9A%E5%AE%A2/</guid>
-    <description><![CDATA[<p>旋转 跳跃喔</p>
-<p>他感到每条路都在头痛</p>
-<p>新鲜的派翠克满脑子</p>
-<p>都是开拓的自慰器</p>
-<p>那些男人爱的男人爱市政</p>
-<p>市政爱市民 市民爱流连</p>
-<p>旋转 跳跃喔</p>
-<p>他感到飞鸟们也在头痛</p>
-<p>冒牌的派翠克满脑子</p>
-<p>都是稳妥的独角戏</p>]]></description>
+    <guid>Neutralmilkzzz.github.io/music/</guid>
+    <description><![CDATA[<p>翻转岩石，晨光洒落你身</p>
+<p>出来れば世界を僕は塗り変えたい</p>
+<p>如果可以的话 我想将这个世界改变</p>
+<p>戦争をなくすような大逸れたことじゃない</p>
+<p>但我没有将战争从这世界消除那么了不起的想法</p>]]></description>
+</item>
+<item>
+    <title>午夜电波：0</title>
+    <link>Neutralmilkzzz.github.io/welcome/</link>
+    <pubDate>Mon, 01 Dec 2025 22:22:35 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>Neutralmilkzzz.github.io/welcome/</guid>
+    <description><![CDATA[<p>一个<strong>cs</strong>专业的学生总归得有一个自己的博客。
+(以及用markdown记笔记的习惯)</p>
+<p>总之研究这个服务器花了我整整两天，不写一篇博客总感觉白忙活了。
+支持rss，欢迎订阅。</p>]]></description>
 </item>
 </channel>
 </rss>
