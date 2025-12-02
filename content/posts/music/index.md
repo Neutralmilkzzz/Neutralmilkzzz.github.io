@@ -4,10 +4,7 @@ draft = false
 title = '転がる岩、君に朝が降る'
 +++
 
-<audio controls>
-    <source src="/audio/yoru.mp3" type="audio/mpeg">
-    您的浏览器不支持音频播放。
-</audio>
+{{< netease-cloud-music 1978593877 song true "Forget (Slowed Down) - Storm Lake" >}}
 
 翻转岩石，晨光洒落你身
 
