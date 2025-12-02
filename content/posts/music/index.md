@@ -1,6 +1,7 @@
 +++
 date = '2025-12-02T11:14:49+08:00'
 draft = false
+categories = ['推歌']
 title = '転がる岩、君に朝が降る'
 +++
 {{< bilibili BV1nV4y1w74h >}}

@@ -1,6 +1,7 @@
 +++
 date = '2025-12-01T22:22:35+08:00'
 draft = false
+categories = ['午夜电波']
 title = '午夜电波：0'
 +++
 
