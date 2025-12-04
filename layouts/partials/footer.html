@@ -4,7 +4,8 @@
             {{- /* Custom Content */ -}}
             {{- with .Site.Params.footer.custom -}}
                 <div class="footer-line">
-                    {{- safeHTML . -}}
+                    <i class='fas fa-chalkboard'></i>PV:<span id="busuanzi_value_site_pv"></span> | <i class='fas fa-chalkboard-teacher'></i>UV:<span id="busuanzi_value_site_uv"></span>
+                    <script async src="https://cdn.dusays.com/bsz.js"></script>
                 </div>
             {{- end -}}
 

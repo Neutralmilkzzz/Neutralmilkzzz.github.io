@@ -142,7 +142,7 @@ enableEmoji = true
           # Gravatar Email for preferred avatar in home page
           gravatarEmail = ""
           # URL of avatar shown in home page
-          avatarURL = "/images/avatar.jpg"
+          avatarURL = "/images/avatar.png"
           # title shown in home page (HTML format is supported)
           title = ""
           # subtitle shown in home page
@@ -286,7 +286,7 @@ enableEmoji = true
           # Gravatar 邮箱，用于优先在主页显示的头像
           gravatarEmail = ""
           # 主页显示头像的 URL
-          avatarURL = "/images/avatar.jpg"
+          avatarURL = "/images/avatar.png"
           # 主页显示的网站标题 (支持 HTML 格式)
           title = "Isaac ZZH"
           # 主页显示的网站副标题
@@ -296,7 +296,7 @@ enableEmoji = true
           # 是否显示社交账号
           social = true
           # 免责声明 (支持 HTML 格式)
-          disclaimer = "这夜派对，就要散场"
+          disclaimer = ""
         # 主页文章列表
         [languages.zh-cn.params.home.posts]
           enable = true
@@ -428,7 +428,7 @@ enableEmoji = true
           # Gravatar Email for preferred avatar in home page
           gravatarEmail = ""
           # URL of avatar shown in home page
-          avatarURL = "/images/avatar.jpg"
+          avatarURL = "/images/avatar.png"
           # title shown in home page (HTML format is supported)
           title = ""
           # subtitle shown in home page
@@ -513,7 +513,7 @@ enableEmoji = true
 
   [params.reward]                                         # 文章打赏
     enable = true
-    wechat = "wechat,jpg"           # 微信二维码
+    wechat = "wechat.jpg"           # 微信二维码
     alipay = "alipay.jpg"    
 
   # Footer config
@@ -794,7 +794,7 @@ enableEmoji = true
       # 出版者信息
       [params.page.seo.publisher]
         name = "isaac"
-        logoUrl = "/images/avatar.jpg"
+        logoUrl = "/images/avatar.png"
 
   # TypeIt config
   # TypeIt 配置
