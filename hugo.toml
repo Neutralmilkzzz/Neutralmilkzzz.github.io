@@ -290,18 +290,18 @@ enableEmoji = true
           # 主页显示的网站标题 (支持 HTML 格式)
           title = "Isaac ZZH"
           # 主页显示的网站副标题
-          subtitle = "这一切都是命运石之门的选择"
+          subtitle = "SEE YOU SPACE COWBOY"
           # 是否为副标题显示打字机动画
           typeit = true
           # 是否显示社交账号
           social = true
           # 免责声明 (支持 HTML 格式)
-          disclaimer = ""
+          disclaimer = "这夜派对，就要散场"
         # 主页文章列表
         [languages.zh-cn.params.home.posts]
           enable = true
           # 主页每页显示文章数量
-          pagination.pagerSize = 6
+          pagination.pagerSize = 12
       # 主页的社交信息设置
       [languages.zh-cn.params.social]
         GitHub = "Neutralmilkzzz"
@@ -492,7 +492,7 @@ enableEmoji = true
       logo = ""
       # title name
       # 标题名称
-      name = "isaac's Blog"
+      name = "Isaac的博客"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
       pre = "<i class='fas fa-heart fa-fw'></i>"
@@ -801,7 +801,7 @@ enableEmoji = true
   [params.typeit]
     # typing speed between each step (measured in milliseconds)
     # 每一步的打字速度 (单位是毫秒)
-    speed = 100
+    speed = 200
     # blinking speed of the cursor (measured in milliseconds)
     # 光标的闪烁速度 (单位是毫秒)
     cursorSpeed = 1000
