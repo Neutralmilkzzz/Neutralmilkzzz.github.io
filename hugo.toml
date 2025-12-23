@@ -501,7 +501,7 @@ enableEmoji = true
       post = ""
       # whether to use typeit animation for title name
       # 是否为标题显示打字机动画
-      typeit = false
+      typeit = true
   [params.pagination]
     pagerSize = 10
 
