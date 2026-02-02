@@ -1,0 +1,86 @@
+[33mcommit 87217aa6bd5d5e8c4490d72e4f567323877fa397[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Neutralmilkzzz <isaaczhao771@gmail.com>
+Date:   Mon Feb 2 20:21:48 2026 +0800
+
+    自动上传
+
+[1mdiff --git a/.github/workflows/hugo.yml b/.github/workflows/hugo.yml[m
+[1mdeleted file mode 100644[m
+[1mindex a8cf471..0000000[m
+[1m--- a/.github/workflows/hugo.yml[m
+[1m+++ /dev/null[m
+[36m@@ -1,74 +0,0 @@[m
+[31m-# Sample workflow for building and deploying a Hugo site to GitHub Pages[m
+[31m-name: Deploy Hugo site to Pages[m
+[31m-[m
+[31m-on:[m
+[31m-  # Runs on pushes targeting the default branch[m
+[31m-  push:[m
+[31m-    branches: ["main"][m
+[31m-[m
+[31m-  # Allows you to run this workflow manually from the Actions tab[m
+[31m-  workflow_dispatch:[m
+[31m-[m
+[31m-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages[m
+[31m-permissions:[m
+[31m-  contents: read[m
+[31m-  pages: write[m
+[31m-  id-token: write[m
+[31m-[m
+[31m-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.[m
+[31m-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.[m
+[31m-concurrency:[m
+[31m-  group: "pages"[m
+[31m-  cancel-in-progress: false[m
+[31m-[m
+[31m-# Default to bash[m
+[31m-defaults:[m
+[31m-  run:[m
+[31m-    shell: bash[m
+[31m-[m
+[31m-jobs:[m
+[31m-  # Build job[m
+[31m-  build:[m
+[31m-    runs-on: ubuntu-latest[m
+[31m-    env:[m
+[31m-      HUGO_VERSION: 0.128.0[m
+[31m-    steps:[m
+[31m-      - name: Install Hugo CLI[m
+[31m-        run: |[m
+[31m-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \[m
+[31m-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb[m
+[31m-      - name: Install Dart Sass[m
+[31m-        run: sudo snap install dart-sass[m
+[31m-      - name: Checkout[m
+[31m-        uses: actions/checkout@v4[m
+[31m-        with:[m
+[31m-          submodules: recursive[m
+[31m-      - name: Setup Pages[m
+[31m-        id: pages[m
+[31m-        uses: actions/configure-pages@v5[m
+[31m-      - name: Install Node.js dependencies[m
+[31m-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"[m
+[31m-      - name: Build with Hugo[m
+[31m-        env:[m
+[31m-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache[m
+[31m-          HUGO_ENVIRONMENT: production[m
+[31m-        run: |[m
+[31m-          hugo \[m
+[31m-            --minify \[m
+[31m-            --baseURL "${{ steps.pages.outputs.base_url }}/"[m
+[31m-      - name: Upload artifact[m
+[31m-        uses: actions/upload-pages-artifact@v3[m
+[31m-        with:[m
+[31m-          path: ./public[m
+[31m-[m
+[31m-  # Deployment job[m
+[31m-  deploy:[m
+[31m-    environment:[m
+[31m-      name: github-pages[m
+[31m-      url: ${{ steps.deployment.outputs.page_url }}[m
+[31m-    runs-on: ubuntu-latest[m
+[31m-    needs: build[m
+[31m-    steps:[m
+[31m-      - name: Deploy to GitHub Pages[m
+[31m-        id: deployment[m
+[31m-        uses: actions/deploy-pages@v4[m
