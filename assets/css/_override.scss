@@ -34,3 +34,26 @@
     padding: 20px;
     margin-top: 20px;
 }
+
+/* Custom CSS for Fixed Action Buttons (Neon, Bounce, Glassmorphism) */
+.fixed-button {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    animation: neon-breath 3s ease-in-out infinite;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.3s ease !important;
+}
+
+.fixed-button:hover {
+    transform: scale(1.15) translateY(-5px) !important;
+}
+
+@keyframes neon-breath {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(0, 191, 255, 0.4), 0 0 10px rgba(0, 191, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 191, 255, 0.7), 0 0 30px rgba(0, 191, 255, 0.3);
+    }
+}
