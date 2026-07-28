@@ -41,8 +41,8 @@
 [theme="dark"] .lyrics-pair.chorus em,[data-theme="dark"] .lyrics-pair.chorus em { color:#dfb98e; }
 @media (max-width:600px) { .lyrics-stanza { padding:1.7rem .8rem .7rem; border-radius:14px; }.lyrics-pair { padding:.85rem .15rem; }.lyrics-pair em { font-size:.96rem; line-height:1.75; }.lyrics-pair span { font-size:.8rem; } }
 /* Local Chinese typography: restrained Song/Ming style */
-@font-face { font-family:"Noto Serif SC Local"; src:url("/fonts/noto-serif-sc-400.woff2") format("woff2"); font-style:normal; font-weight:400; font-display:swap; }
-@font-face { font-family:"Noto Serif SC Local"; src:url("/fonts/noto-serif-sc-600.woff2") format("woff2"); font-style:normal; font-weight:600; font-display:swap; }
+@font-face { font-family:"Noto Serif SC Local"; src:url("../fonts/noto-serif-sc-400.woff2") format("woff2"); font-style:normal; font-weight:400; font-display:swap; }
+@font-face { font-family:"Noto Serif SC Local"; src:url("../fonts/noto-serif-sc-600.woff2") format("woff2"); font-style:normal; font-weight:600; font-display:swap; }
 body, button, input, textarea, .content, .summary, .menu { font-family:"Noto Serif SC Local","Songti SC","STSong",serif; font-weight:400; }
 h1, h2, h3, h4, h5, h6, .header-title, .single-title, .notebook-hero h1, .notebook-section-heading h2, .notebook-path h3, .notebook-post-card h3 { font-family:"Noto Serif SC Local","Songti SC","STSong",serif; font-weight:600; }
 code, pre, kbd, samp, .chroma { font-family:"JetBrains Mono","Cascadia Code","SFMono-Regular",Consolas,monospace; }
