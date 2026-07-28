@@ -30,8 +30,10 @@
                 <a class="menu-item" href="/">CV</a>
                 {{- range .Site.Menus.main -}}
                     {{- $url := .URL -}}
+                    {{- $path := strings.TrimPrefix "/" $url -}}
+                    {{- $path = strings.TrimPrefix "blog/" $path -}}
                     {{- if not (urls.Parse $url).Host -}}
-                        {{- $url = printf "%s%s" $.Site.Home.RelPermalink (strings.TrimPrefix "/" $url) -}}
+                        {{- $url = printf "%s%s" $.Site.Home.RelPermalink $path -}}
                     {{- end -}}
                     {{- with .Page -}}
                         {{- $url = .RelPermalink -}}
@@ -144,8 +146,10 @@
             <a class="menu-item" href="/">CV</a>
             {{- range .Site.Menus.main -}}
                     {{- $url := .URL -}}
+                    {{- $path := strings.TrimPrefix "/" $url -}}
+                    {{- $path = strings.TrimPrefix "blog/" $path -}}
                     {{- if not (urls.Parse $url).Host -}}
-                        {{- $url = printf "%s%s" $.Site.Home.RelPermalink (strings.TrimPrefix "/" $url) -}}
+                        {{- $url = printf "%s%s" $.Site.Home.RelPermalink $path -}}
                     {{- end -}}
                 {{- with .Page -}}
                     {{- $url = .RelPermalink -}}
