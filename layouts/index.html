@@ -10,7 +10,7 @@
       <h1>林中小屋<span>。</span></h1>
       <p class="notebook-lede">跟住去边度？</p>
       <div class="notebook-actions">
-        <a class="notebook-button primary" href="{{ "/posts/" | relLangURL }}">开始阅读 <span>↗</span></a>
+        <a class="notebook-button primary" href="{{ "posts/" | relLangURL }}">开始阅读 <span>↗</span></a>
         <a class="notebook-button quiet" href="https://github.com/Neutralmilkzzz" target="_blank" rel="noopener">GitHub</a>
       </div>
       <div class="notebook-stats" aria-label="博客统计">
@@ -19,24 +19,24 @@
         {{- if gt (len $posts) 0 -}}<div><strong>{{ (index $posts 0).Date.Format "2006.01" }}</strong><span>最近更新</span></div>{{- end -}}
       </div>
     </div>
-    <div class="notebook-portrait-wrap"><div class="notebook-portrait-ring"></div><img class="notebook-portrait" src="{{ "/images/avatar.png" | relURL }}" alt="Isaac" /></div>
+    <div class="notebook-portrait-wrap"><div class="notebook-portrait-ring"></div><img class="notebook-portrait" src="{{ "images/avatar.png" | relURL }}" alt="Isaac" /></div>
   </section>
 
   <section class="notebook-section notebook-explore">
-    <div class="notebook-section-heading"><p>EXPLORE</p><h2>Breathe,Breathe in the air</h2><a href="{{ "/categories/" | relLangURL }}">所有分类 <span>→</span></a></div>
+    <div class="notebook-section-heading"><p>EXPLORE</p><h2>Breathe,Breathe in the air</h2><a href="{{ "categories/" | relLangURL }}">所有分类 <span>→</span></a></div>
     <div class="notebook-paths">
-      <a class="notebook-path path-radio" href="{{ "/categories/午夜电波/" | relLangURL }}"><span class="path-index">01</span><span class="path-icon">◖</span><h3>午夜电波</h3><p>深夜记录、工具折腾与偶然收到的信号。</p><span class="path-arrow">↗</span></a>
-      <a class="notebook-path path-music" href="{{ "/categories/推歌/" | relLangURL }}"><span class="path-index">02</span><span class="path-icon">♫</span><h3>推歌</h3><p>循环播放的声音，以及音乐背后的时刻。</p><span class="path-arrow">↗</span></a>
-      <a class="notebook-path path-learning" href="{{ "/categories/还是要学习一个/" | relLangURL }}"><span class="path-index">03</span><span class="path-icon">⌘</span><h3>还是要学习一个</h3><p>技术笔记、开发工具与长期学习的痕迹。</p><span class="path-arrow">↗</span></a>
-      <a class="notebook-path path-exam" href="{{ "/categories/hku考试急救/" | relLangURL }}"><span class="path-index">04</span><span class="path-icon">⚡</span><h3>hku考试急救</h3><p>考前高密度复习与关键知识点整理。</p><span class="path-arrow">↗</span></a>
-      <a class="notebook-path path-review" href="{{ "/categories/hku课程复习/" | relLangURL }}"><span class="path-index">05</span><span class="path-icon">◇</span><h3>hku课程复习</h3><p>课程脉络、错题回看与阶段性总结。</p><span class="path-arrow">↗</span></a>
-      <a class="notebook-path path-comp" href="{{ "/categories/comp2113/" | relLangURL }}"><span class="path-index">06</span><span class="path-icon">{ }</span><h3>comp2113</h3><p>程序设计练习、shell 与课程实验记录。</p><span class="path-arrow">↗</span></a>
-      <a class="notebook-path path-books" href="{{ "/categories/读书笔记/" | relLangURL }}"><span class="path-index">07</span><span class="path-icon">◒</span><h3>读书笔记</h3><p>书页、哲学与那些值得慢慢想的问题。</p><span class="path-arrow">↗</span></a>
+      <a class="notebook-path path-radio" href="{{ "categories/午夜电波/" | relLangURL }}"><span class="path-index">01</span><span class="path-icon">◖</span><h3>午夜电波</h3><p>深夜记录、工具折腾与偶然收到的信号。</p><span class="path-arrow">↗</span></a>
+      <a class="notebook-path path-music" href="{{ "categories/推歌/" | relLangURL }}"><span class="path-index">02</span><span class="path-icon">♫</span><h3>推歌</h3><p>循环播放的声音，以及音乐背后的时刻。</p><span class="path-arrow">↗</span></a>
+      <a class="notebook-path path-learning" href="{{ "categories/还是要学习一个/" | relLangURL }}"><span class="path-index">03</span><span class="path-icon">⌘</span><h3>还是要学习一个</h3><p>技术笔记、开发工具与长期学习的痕迹。</p><span class="path-arrow">↗</span></a>
+      <a class="notebook-path path-exam" href="{{ "categories/hku考试急救/" | relLangURL }}"><span class="path-index">04</span><span class="path-icon">⚡</span><h3>hku考试急救</h3><p>考前高密度复习与关键知识点整理。</p><span class="path-arrow">↗</span></a>
+      <a class="notebook-path path-review" href="{{ "categories/hku课程复习/" | relLangURL }}"><span class="path-index">05</span><span class="path-icon">◇</span><h3>hku课程复习</h3><p>课程脉络、错题回看与阶段性总结。</p><span class="path-arrow">↗</span></a>
+      <a class="notebook-path path-comp" href="{{ "categories/comp2113/" | relLangURL }}"><span class="path-index">06</span><span class="path-icon">{ }</span><h3>comp2113</h3><p>程序设计练习、shell 与课程实验记录。</p><span class="path-arrow">↗</span></a>
+      <a class="notebook-path path-books" href="{{ "categories/读书笔记/" | relLangURL }}"><span class="path-index">07</span><span class="path-icon">◒</span><h3>读书笔记</h3><p>书页、哲学与那些值得慢慢想的问题。</p><span class="path-arrow">↗</span></a>
     </div>
   </section>
 
   <section class="notebook-section notebook-latest">
-    <div class="notebook-section-heading"><p>RECENT NOTES</p><h2>再生產</h2><a href="{{ "/posts/" | relLangURL }}">查看全部 <span>→</span></a></div>
+    <div class="notebook-section-heading"><p>RECENT NOTES</p><h2>再生產</h2><a href="{{ "posts/" | relLangURL }}">查看全部 <span>→</span></a></div>
     <div class="notebook-post-grid">
       {{- range $latest }}
       <article class="notebook-post-card">
@@ -53,6 +53,6 @@
     </div>
   </section>
 
-  <section class="notebook-signoff"><p>SEE YOU SPACE COWGIRL, SOMEDAY, SOMEWHERE!</p><a href="{{ "/about/" | relLangURL }}">认识 Isaac <span>→</span></a></section>
+  <section class="notebook-signoff"><p>SEE YOU SPACE COWGIRL, SOMEDAY, SOMEWHERE!</p><a href="{{ "about/" | relLangURL }}">认识 Isaac <span>→</span></a></section>
 </div>
 {{- end -}}

@@ -29,7 +29,10 @@
             <div class="menu-inner">
                 <a class="menu-item" href="/">CV</a>
                 {{- range .Site.Menus.main -}}
-                    {{- $url := .URL | relLangURL -}}
+                    {{- $url := .URL -}}
+                    {{- if not (urls.Parse $url).Host -}}
+                        {{- $url = printf "%s%s" $.Site.Home.RelPermalink (strings.TrimPrefix "/" $url) -}}
+                    {{- end -}}
                     {{- with .Page -}}
                         {{- $url = .RelPermalink -}}
                     {{- end -}}
@@ -140,7 +143,10 @@
             {{- $currentPage := . -}}
             <a class="menu-item" href="/">CV</a>
             {{- range .Site.Menus.main -}}
-                {{- $url := .URL | relLangURL -}}
+                    {{- $url := .URL -}}
+                    {{- if not (urls.Parse $url).Host -}}
+                        {{- $url = printf "%s%s" $.Site.Home.RelPermalink (strings.TrimPrefix "/" $url) -}}
+                    {{- end -}}
                 {{- with .Page -}}
                     {{- $url = .RelPermalink -}}
                 {{- end -}}
