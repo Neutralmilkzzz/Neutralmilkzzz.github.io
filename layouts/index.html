@@ -1,41 +1,54 @@
 {{- define "content" -}}
-    {{- $params := .Scratch.Get "params" -}}
-    {{- $profile := .Site.Params.home.profile -}}
-    {{- $posts := .Site.Params.home.posts -}}
-
-    <div class="page home"{{ if ne $posts.enable false }} data-home="posts"{{ end }}>
-        {{- /* Profile */ -}}
-        {{- if ne $profile.enable false -}}
-            {{- partial "home/profile.html" . -}}
-        {{- end -}}
-
-        {{- /* Content */ -}}
-        {{- if .Content -}}
-            <div class="single">
-                <div class="content" id="content">
-                    {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
-                </div>
-            </div>
-        {{- end -}}
-
-        {{- /* Posts */ -}}
-        {{- if ne $posts.enable false | and .Site.RegularPages -}}
-            {{- /* Paginate */ -}}
-            {{- $pages := where .Site.RegularPages "Type" "posts" -}}
-            {{- if .Site.Params.page.hiddenFromHomePage -}}
-                {{- $pages = where $pages "Params.hiddenfromhomepage" false -}}
-            {{- else -}}
-                {{- $pages = where $pages "Params.hiddenfromhomepage" "!=" true -}}
-            {{- end -}}
-            {{- with $posts.paginate | default .Site.Params.paginate -}}
-                {{- $pages = $.Paginate $pages . -}}
-            {{- else -}}
-                {{- $pages = .Paginate $pages -}}
-            {{- end -}}
-            {{- range $pages.Pages -}}
-                {{- .Render "summary" -}}
-            {{- end -}}
-            {{- partial "paginator.html" . -}}
-        {{- end -}}
+{{- $posts := where .Site.RegularPages "Type" "posts" -}}
+{{- $posts = $posts.ByDate.Reverse -}}
+{{- $latest := first 6 $posts -}}
+<div class="page home notebook-home">
+  <section class="notebook-hero">
+    <div class="notebook-orbit orbit-one"></div><div class="notebook-orbit orbit-two"></div>
+    <div class="notebook-hero-copy">
+      <p class="notebook-kicker">PERSONAL ARCHIVE · SINCE 2025</p>
+      <h1>Isaac 的知识花园<span>。</span></h1>
+      <p class="notebook-lede">在阅读、代码与日常思考之间，留下值得反复打开的页面。</p>
+      <div class="notebook-actions">
+        <a class="notebook-button primary" href="{{ "/posts/" | relLangURL }}">开始阅读 <span>↗</span></a>
+        <a class="notebook-button quiet" href="https://github.com/Neutralmilkzzz" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="notebook-stats" aria-label="博客统计">
+        <div><strong>{{ len $posts }}</strong><span>篇文章</span></div>
+        <div><strong>{{ len .Site.Taxonomies.tags }}</strong><span>个标签</span></div>
+        {{- if gt (len $posts) 0 -}}<div><strong>{{ (index $posts 0).Date.Format "2006.01" }}</strong><span>最近更新</span></div>{{- end -}}
+      </div>
     </div>
+    <div class="notebook-portrait-wrap"><div class="notebook-portrait-ring"></div><img class="notebook-portrait" src="{{ "/images/avatar.png" | relURL }}" alt="Isaac" /></div>
+  </section>
+
+  <section class="notebook-section notebook-explore">
+    <div class="notebook-section-heading"><p>EXPLORE</p><h2>从这里开始漫游</h2><a href="{{ "/tags/" | relLangURL }}">所有标签 <span>→</span></a></div>
+    <div class="notebook-paths">
+      <a class="notebook-path path-reading" href="{{ "/posts/" | relLangURL }}"><span class="path-index">01</span><span class="path-icon">◒</span><h3>阅读与思想</h3><p>书页、哲学与那些值得慢慢想的问题。</p><span class="path-arrow">↗</span></a>
+      <a class="notebook-path path-code" href="{{ "/posts/" | relLangURL }}"><span class="path-index">02</span><span class="path-icon">⌘</span><h3>代码与学习</h3><p>技术笔记、项目记录，以及持续学习的痕迹。</p><span class="path-arrow">↗</span></a>
+      <a class="notebook-path path-life" href="{{ "/posts/" | relLangURL }}"><span class="path-index">03</span><span class="path-icon">✦</span><h3>生活与随笔</h3><p>偶然看见的风景、音乐与不想遗忘的瞬间。</p><span class="path-arrow">↗</span></a>
+    </div>
+  </section>
+
+  <section class="notebook-section notebook-latest">
+    <div class="notebook-section-heading"><p>RECENT NOTES</p><h2>最近写下的东西</h2><a href="{{ "/posts/" | relLangURL }}">查看全部 <span>→</span></a></div>
+    <div class="notebook-post-grid">
+      {{- range $latest }}
+      <article class="notebook-post-card">
+        <a class="notebook-post-link" href="{{ .RelPermalink }}">
+          <div class="notebook-post-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time>{{ with .Params.tags }}<span>{{ index . 0 }}</span>{{ end }}</div>
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Summary | plainify | truncate 110 }}</p>
+          <span class="notebook-read">阅读笔记 <b>→</b></span>
+        </a>
+      </article>
+      {{- else }}
+      <p class="notebook-empty">第一篇笔记正在路上。</p>
+      {{- end }}
+    </div>
+  </section>
+
+  <section class="notebook-signoff"><p>KEEP A LITTLE SPACE FOR WONDER.</p><a href="{{ "/about/" | relLangURL }}">认识 Isaac <span>→</span></a></section>
+</div>
 {{- end -}}
