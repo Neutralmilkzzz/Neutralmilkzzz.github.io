@@ -1,4 +1,10 @@
 /* Home: a quiet, editorial knowledge garden */
+body { min-height:100vh; background:radial-gradient(circle at 10% 0%,rgba(183,207,177,.48),transparent 34rem),radial-gradient(circle at 92% 24%,rgba(224,198,157,.24),transparent 32rem),linear-gradient(145deg,#fffdf9 0%,#f2f7ef 48%,#dfeadd 100%); background-attachment:fixed; }
+body[theme="dark"] { background:radial-gradient(circle at 12% 0%,rgba(56,94,65,.3),transparent 38rem),radial-gradient(circle at 92% 30%,rgba(111,76,50,.18),transparent 34rem),linear-gradient(145deg,#090d0b 0%,#121b16 52%,#1b2a20 100%); background-attachment:fixed; }
+header { background:rgba(248,251,246,.86); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); }
+body[theme="dark"] header { background:rgba(13,20,16,.86); }
+header.mobile .menu { background:rgba(248,251,246,.96); }
+body[theme="dark"] header.mobile .menu { background:rgba(13,20,16,.97); }
 .notebook-home { max-width: 1120px; padding: 2.5rem 1.25rem 4rem; margin: 0 auto; background: transparent; backdrop-filter: none; }
 .notebook-hero { position: relative; isolation: isolate; min-height: 470px; overflow: hidden; display: flex; align-items: center; justify-content: space-between; gap: 3rem; padding: 4.5rem 6.5rem; border-radius: 28px; color: #f7f4ed; background: radial-gradient(circle at 78% 18%, rgba(216, 184, 104, .25), transparent 25rem), radial-gradient(circle at 13% 105%, rgba(160, 91, 50, .28), transparent 24rem), linear-gradient(135deg, #0f271a 0%, #21462c 52%, #533b26 100%); box-shadow: 0 24px 70px rgba(10, 31, 20, .24); }
 .notebook-hero::after { content: ""; position: absolute; z-index: -1; inset: 0; opacity: .22; background-image: linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px); background-size: 36px 36px; mask-image: linear-gradient(to bottom, black, transparent); }
