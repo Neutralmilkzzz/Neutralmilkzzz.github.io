@@ -977,6 +977,11 @@ enableEmoji = true
 [[module.mounts]]
 source = "content"
 target = "content"
+lang = "zh-cn"
+
+[[module.mounts]]
+source = "content"
+target = "content"
 lang = "zh-tw"
   [languages.zh-tw]
     weight = 4
