@@ -642,7 +642,6 @@ enableEmoji = true
     [params.page.mapbox]
       # access token of Mapbox GL JS
       # Mapbox GL JS 的 access token
-      accessToken = "pk.eyJ1IjoiZGlsbG9uenEiLCJhIjoiY2s2czd2M2x3MDA0NjNmcGxmcjVrZmc2cyJ9.aSjv2BNuZUfARvxRYjSVZQ"
       # style for the light theme
       # 浅色主题的地图样式
       lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
@@ -974,3 +973,68 @@ enableEmoji = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[[module.mounts]]
+source = "content"
+target = "content"
+lang = "zh-tw"
+  [languages.zh-tw]
+    weight = 4
+    languageCode = "zh-TW"
+    languageName = "繁體中文"
+    hasCJKLanguage = true
+    contentDir = "content"
+    pagination.pagerSize = 12
+    [languages.zh-tw.menu]
+      [[languages.zh-tw.menu.main]]
+        identifier = "posts"
+        name = "所有文章"
+        url = "/posts/"
+        weight = 1
+      [[languages.zh-tw.menu.main]]
+        identifier = "tags"
+        name = "標籤"
+        url = "/tags/"
+        weight = 2
+      [[languages.zh-tw.menu.main]]
+        identifier = "categories"
+        name = "分類"
+        url = "/categories/"
+        weight = 3
+      [[languages.zh-tw.menu.main]]
+        identifier = "documentation"
+        name = "文件"
+        url = "/categories/documentation/"
+        weight = 4
+      [[languages.zh-tw.menu.main]]
+        identifier = "about"
+        name = "關於"
+        url = "/about/"
+        weight = 5
+      [[languages.zh-tw.menu.main]]
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw'></i>"
+        name = ""
+        url = "https://github.com/Neutralmilkzzz"
+        title = "GitHub"
+        weight = 6
+    [languages.zh-tw.params]
+      description = "關於"
+      keywords = ["主題", "Hugo"]
+      [languages.zh-tw.params.app]
+        title = "Isaac的部落格"
+      [languages.zh-tw.params.header.title]
+        name = "Isaac的部落格"
+      [languages.zh-tw.params.search]
+        enable = true
+        type = "algolia"
+        contentLength = 4000
+        placeholder = ""
+        maxResultLength = 10
+        snippetLength = 50
+        highlightTag = "em"
+        absoluteURL = false
+        [languages.zh-tw.params.search.algolia]
+          index = "index.zh-tw"
+          appID = "PASDMWALPK"
+          searchKey = "b42948e51daaa93df92381c8e2ac0f93"
