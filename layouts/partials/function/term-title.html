@@ -1,8 +1,8 @@
 {{- $term := .term -}}
 {{- if eq .page.Lang "zh-tw" -}}
     {{- $translations := dict
-        "HKU考试急救" "HKU考試急救"
-        "HKU课程复习" "HKU課程複習"
+        "HKU课程" "HKU課程"
+        "hku课程" "HKU課程"
         "午夜电波" "午夜電波"
         "读书笔记" "讀書筆記"
         "还是要学习一个" "還是要學習一個"
@@ -11,8 +11,8 @@
         "腰乐队" "腰樂隊"
         "齐泽克" "齊澤克"
         "黑格尔" "黑格爾"
-    -}}
         "论文精读" "論文精讀"
+    -}}
     {{- index $translations $term | default $term -}}
 {{- else -}}
     {{- $term -}}
