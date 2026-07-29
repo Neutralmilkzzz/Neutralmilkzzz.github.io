@@ -55,3 +55,13 @@ header .header-title,header .header-title span { font-family:"Cooper Black","Coo
 body, button, input, textarea, .content, .summary, .menu { font-family:"Noto Serif SC Local","Songti SC","STSong",serif; font-weight:400; }
 h1, h2, h3, h4, h5, h6, .header-title, .single-title, .notebook-hero h1, .notebook-section-heading h2, .notebook-path h3, .notebook-post-card h3 { font-family:"Noto Serif SC Local","Songti SC","STSong",serif; font-weight:600; }
 code, pre, kbd, samp, .chroma { font-family:"JetBrains Mono","Cascadia Code","SFMono-Regular",Consolas,monospace; }
+/* Song-sheet variants: shared structure, distinct atmosphere */
+.song-intro--morning { border-left-color:#6f938b; background:linear-gradient(90deg,rgba(112,157,151,.16),rgba(214,190,145,.08)); }
+.song-sheet--morning .lyrics-stanza { border-color:rgba(72,119,106,.14); background:linear-gradient(145deg,rgba(250,252,246,.97),rgba(226,239,231,.9)); }
+.song-sheet--morning .lyrics-heading span,.song-sheet--morning .lyrics-pair.refrain em { color:#4f786d; }
+.song-sheet--morning .lyrics-pair.chorus { background:linear-gradient(90deg,rgba(211,178,111,.14),rgba(122,166,159,.1)); }
+.song-intro--night { border-left-color:#845c4e; background:linear-gradient(90deg,rgba(80,106,83,.15),rgba(149,91,63,.11)); }
+.song-sheet--night .lyrics-stanza { border-color:rgba(104,83,66,.15); background:linear-gradient(145deg,rgba(248,243,232,.97),rgba(230,225,207,.9)); }
+.song-sheet--night .lyrics-pair.lyric-solo em { color:#35463a; font-family:"Noto Serif SC Local","Songti SC","STSong",serif; font-style:normal; font-size:.98rem; line-height:2; letter-spacing:.035em; }
+.song-sheet--night .lyrics-pair.chorus { background:linear-gradient(90deg,rgba(119,70,52,.11),rgba(72,106,81,.11)); }
+body[theme="dark"] .song-sheet--morning .lyrics-stanza { background:linear-gradient(145deg,#172820,#203029); } body[theme="dark"] .song-sheet--night .lyrics-stanza { background:linear-gradient(145deg,#211d19,#25291f); } body[theme="dark"] .song-sheet--night .lyrics-pair.lyric-solo em { color:#d8dfd3; }
