@@ -6,57 +6,69 @@ categories: ["托福"]
 ---
 
 <style>
-.toefl-speaking-note {
+#content {
   --toefl-accent: #2f6f8f;
   --toefl-soft: #eef7f8;
   --toefl-line: rgba(47, 111, 143, 0.22);
   line-height: 1.82;
 }
-.toefl-speaking-note > p:first-of-type {
-  margin: 0 0 1.35rem;
-  padding: 0.9rem 1rem;
+#content h3 {
+  margin: 2rem 0 1rem;
+  padding: 0.8rem 1rem;
   border-left: 4px solid var(--toefl-accent);
-  background: var(--toefl-soft);
-  font-size: 1.12rem;
-  font-weight: 650;
+  border-bottom: 1px solid var(--toefl-line);
+  border-radius: 0.35rem;
+  background: linear-gradient(90deg, var(--toefl-soft), rgba(238, 247, 248, 0.35));
+  color: #244a5c;
+  line-height: 1.55;
 }
-.toefl-speaking-note p {
+#content h3:first-of-type {
+  margin-top: 0;
+}
+#content p {
   margin: 0.9rem 0;
 }
-.toefl-speaking-note strong {
+#content strong {
   color: var(--toefl-accent);
   font-weight: 750;
 }
-.toefl-speaking-note table {
+#content ul,
+#content ol {
+  line-height: 1.75;
+}
+#content li {
+  margin: 0.35rem 0;
+}
+#content table {
   display: table;
   width: 100%;
   margin: 1.2rem 0;
   border-collapse: collapse;
   font-size: 0.95rem;
 }
-.toefl-speaking-note th {
+#content th {
   background: var(--toefl-soft);
   color: #244a5c;
 }
-.toefl-speaking-note th,
-.toefl-speaking-note td {
+#content th,
+#content td {
   border: 1px solid var(--toefl-line);
   padding: 0.65rem 0.75rem;
   vertical-align: top;
 }
-.toefl-speaking-note hr {
+#content hr {
   margin: 2rem 0;
   border: 0;
   border-top: 1px solid var(--toefl-line);
 }
-.toefl-speaking-note h3 {
-  margin-top: 2rem;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid var(--toefl-line);
+@media (max-width: 680px) {
+  #content h3 {
+    padding: 0.75rem 0.85rem;
+    font-size: 1rem;
+  }
 }
 </style>
 
-<div class="toefl-speaking-note">
 Mock 4 speaking替换整理
 
 ### 原题：Great. Some people believe that the current education system needs significant changes to better prepare children for the future, focusing more on skills like problem-solving and teamwork instead of mainly teaching facts. Do you agree or disagree with this viewpoint? Why?
@@ -155,4 +167,3 @@ Engaging with educational serials on these platforms **kindled my interest** in 
 4. **be very rewarding (很有回报):** 就是“好”
 5. **take someone under sb.'s wing (悉心关照某人):** 老师关爱学生的表达
 6. **scientific breakthroughs (科学突破)**
-</div>

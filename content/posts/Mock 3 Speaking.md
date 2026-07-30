@@ -2,7 +2,72 @@
 title: "Mock 3 Speaking"
 date: 2026-07-30T15:20:35+08:00
 draft: false
+categories: ["托福"]
 ---
+
+<style>
+#content {
+  --toefl-accent: #2f6f8f;
+  --toefl-soft: #eef7f8;
+  --toefl-line: rgba(47, 111, 143, 0.22);
+  line-height: 1.82;
+}
+#content h3 {
+  margin: 2rem 0 1rem;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid var(--toefl-accent);
+  border-bottom: 1px solid var(--toefl-line);
+  border-radius: 0.35rem;
+  background: linear-gradient(90deg, var(--toefl-soft), rgba(238, 247, 248, 0.35));
+  color: #244a5c;
+  line-height: 1.55;
+}
+#content h3:first-of-type {
+  margin-top: 0;
+}
+#content p {
+  margin: 0.9rem 0;
+}
+#content strong {
+  color: var(--toefl-accent);
+  font-weight: 750;
+}
+#content ul,
+#content ol {
+  line-height: 1.75;
+}
+#content li {
+  margin: 0.35rem 0;
+}
+#content table {
+  display: table;
+  width: 100%;
+  margin: 1.2rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+#content th {
+  background: var(--toefl-soft);
+  color: #244a5c;
+}
+#content th,
+#content td {
+  border: 1px solid var(--toefl-line);
+  padding: 0.65rem 0.75rem;
+  vertical-align: top;
+}
+#content hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--toefl-line);
+}
+@media (max-width: 680px) {
+  #content h3 {
+    padding: 0.75rem 0.85rem;
+    font-size: 1rem;
+  }
+}
+</style>
 
 ### 题目：That makes sense. For that same friend or family member, what do you think might challenge them the most about a regular exercise program? How would you help them through this challenge?
 
