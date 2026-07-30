@@ -59,7 +59,7 @@ categories: ["托福"]
 <div class="toefl-speaking-note">
 Mock 4 speaking替换整理
 
-教育是否应该转向培养学生的解决问题能力？
+### 原题：Great. Some people believe that the current education system needs significant changes to better prepare children for the future, focusing more on skills like problem-solving and teamwork instead of mainly teaching facts. Do you agree or disagree with this viewpoint? Why?
 
 我的表达：
 
@@ -75,7 +75,7 @@ To effectively tackle these challenges, **tomorrow's students** must learn to **
 
 
 
-原题：Thank you for agreeing to participate. I'd like to ask you some questions about childhood education. First, did you enjoy your school experience as a child?
+### 原题：Thank you for agreeing to participate. I'd like to ask you some questions about childhood education. First, did you enjoy your school experience as a child?
 
 我的表达：
 
@@ -89,7 +89,9 @@ Beyond basic academics, they helped me **acquire knowledge** and essential **pro
 
 
 
-有没有参加俱乐部
+### 原题： Tell me about a school project or activity you participated in. What made that project or activity special?
+
+我的表达：
 
 I took part in a Go club when I was in primary school. I found a lot of interest in it. By playing Go, I also learned how to compete with others using my brain. It is a good activity to exercise children's minds and is beneficial for their future studies. Also, I met many new friends while playing Go because it is interesting to play with others.
 
@@ -100,8 +102,9 @@ During my time in **primary school**, I chose to **participate fully in** an **e
 I am a **firm believer** that such activities **form the basis of** a child's **problem-solving ability**, which significantly enhances their future **academic performance**. Furthermore, it provided a wonderful platform to **socialise with** others and **get along with** like-minded peers, making the whole experience **very rewarding**
 
 
+### 原题：Interesting. Tell me a little about the technology you used during your childhood education. Do you feel like that technology prepared you for life after school? Why or why not?
 
-原版
+我的表达：
 
 Since I am twenty years old now, the technology back when I was a child was not very avant-garde; it was actually a little bit outdated. The main technology I encountered as a child involved watching TV and DVDs, including some educational series on DVD. By listening to and watching them, I formed a basic knowledge of the world.
 
@@ -112,12 +115,9 @@ As a twenty-year-old, I recall that today's **scientific breakthroughs** had not
 Engaging with educational serials on these platforms **kindled my interest** in various subjects and **formed the basis of** my understanding of the world. I am a **firm believer** that this process allowed me to **acquire knowledge** effectively. Even though it wasn't as advanced as modern systems, the experience was **very rewarding** and ensured I was **well-prepared** for my future **academic attainment**.
 
 
+### **表达替换汇总**
 
-根据您之前的练习，我为您整理了所有基于《会让你在IELTS写作与口语考试中更像一个Native Speaker》（以下简称“该来源”）所使用的地道表达替换表。这些替换旨在将“简单/中式”表达提升为更具表达力的“Native Speaker”风格。
-
-### **地道表达替换汇总表**
-
-| 类别                             | 您的原始/基础表达        | 书中的地道替换 (Native Speaker Style)                        |
+| 类别                             | 基础表达                 | 替换 (Native Speaker Style)                        |
 | -------------------------------- | ------------------------ | ------------------------------------------------------------ |
 | **教育 (Education)**             | learn things / skills    | **acquire knowledge / skills** (获取知识/技能)               |
 |                                  | living skills            | **problem-solving ability** (解决问题的能力)                 |
@@ -155,5 +155,4 @@ Engaging with educational serials on these platforms **kindled my interest** in 
 4. **be very rewarding (很有回报):** 就是“好”
 5. **take someone under sb.'s wing (悉心关照某人):** 老师关爱学生的表达
 6. **scientific breakthroughs (科学突破)**
-
 </div>
