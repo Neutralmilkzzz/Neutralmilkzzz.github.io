@@ -1,9 +1,62 @@
 ---
-title: "Mock 4 Speaking"
+title: "托福口语：1"
 date: 2026-07-30T14:00:24+08:00
 draft: false
+categories: ["托福"]
 ---
 
+<style>
+.toefl-speaking-note {
+  --toefl-accent: #2f6f8f;
+  --toefl-soft: #eef7f8;
+  --toefl-line: rgba(47, 111, 143, 0.22);
+  line-height: 1.82;
+}
+.toefl-speaking-note > p:first-of-type {
+  margin: 0 0 1.35rem;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--toefl-accent);
+  background: var(--toefl-soft);
+  font-size: 1.12rem;
+  font-weight: 650;
+}
+.toefl-speaking-note p {
+  margin: 0.9rem 0;
+}
+.toefl-speaking-note strong {
+  color: var(--toefl-accent);
+  font-weight: 750;
+}
+.toefl-speaking-note table {
+  display: table;
+  width: 100%;
+  margin: 1.2rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.toefl-speaking-note th {
+  background: var(--toefl-soft);
+  color: #244a5c;
+}
+.toefl-speaking-note th,
+.toefl-speaking-note td {
+  border: 1px solid var(--toefl-line);
+  padding: 0.65rem 0.75rem;
+  vertical-align: top;
+}
+.toefl-speaking-note hr {
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid var(--toefl-line);
+}
+.toefl-speaking-note h3 {
+  margin-top: 2rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--toefl-line);
+}
+</style>
+
+<div class="toefl-speaking-note">
 Mock 4 speaking替换整理
 
 教育是否应该转向培养学生的解决问题能力？
@@ -101,5 +154,6 @@ Engaging with educational serials on these platforms **kindled my interest** in 
 3. **academic attainment (学业成就):** 常用
 4. **be very rewarding (很有回报):** 就是“好”
 5. **take someone under sb.'s wing (悉心关照某人):** 老师关爱学生的表达
-6. **scientific breakthroughs (科学突破)** 
+6. **scientific breakthroughs (科学突破)**
 
+</div>
