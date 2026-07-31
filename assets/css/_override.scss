@@ -65,3 +65,107 @@ code, pre, kbd, samp, .chroma { font-family:"JetBrains Mono","Cascadia Code","SF
 .song-sheet--night .lyrics-pair.lyric-solo em { color:#35463a; font-family:"Noto Serif SC Local","Songti SC","STSong",serif; font-style:normal; font-size:.98rem; line-height:2; letter-spacing:.035em; }
 .song-sheet--night .lyrics-pair.chorus { background:linear-gradient(90deg,rgba(119,70,52,.11),rgba(72,106,81,.11)); }
 body[theme="dark"] .song-sheet--morning .lyrics-stanza { background:linear-gradient(145deg,#172820,#203029); } body[theme="dark"] .song-sheet--night .lyrics-stanza { background:linear-gradient(145deg,#211d19,#25291f); } body[theme="dark"] .song-sheet--night .lyrics-pair.lyric-solo em { color:#d8dfd3; }
+
+
+/* TOEFL writing: quiet study-note layout */
+.content:has(.toefl-marker) {
+  --toefl-ink: #294236;
+  --toefl-muted: #6e786f;
+  --toefl-green: #70885d;
+  --toefl-line: rgba(67, 91, 69, .16);
+  --toefl-paper: rgba(250, 247, 238, .92);
+}
+.content:has(.toefl-marker) > h3 {
+  margin: .35rem 0;
+  color: var(--toefl-muted);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .06em;
+}
+.content:has(.toefl-marker) > h3:first-of-type {
+  margin-top: .75rem;
+  color: var(--toefl-ink);
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+.toefl-label {
+  display: inline-block;
+  margin: 1.6rem 0 .55rem;
+  padding: .32rem .7rem;
+  border-radius: 999px;
+  color: #536b48;
+  background: rgba(112, 136, 93, .13);
+  font: 700 .72rem/1 system-ui, sans-serif;
+  letter-spacing: .12em;
+}
+.content:has(.toefl-marker) > blockquote {
+  margin: .45rem 0 1.8rem;
+  padding: 1.05rem 1.25rem;
+  border: 1px solid rgba(112, 136, 93, .16);
+  border-left: 3px solid var(--toefl-green);
+  border-radius: 0 12px 12px 0;
+  color: #53645a;
+  background: linear-gradient(100deg, rgba(112, 136, 93, .1), rgba(214, 190, 145, .08));
+}
+.content:has(.toefl-marker) > blockquote p { margin: 0; line-height: 1.9; }
+.content:has(.toefl-marker) > hr {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--toefl-line);
+}
+.content:has(.toefl-marker) > h2 {
+  margin-top: 2.7rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid var(--toefl-line);
+  color: var(--toefl-ink);
+  font-size: 1.4rem;
+}
+.content:has(.toefl-marker) > h2 + p { color: var(--toefl-muted); }
+.content:has(.toefl-marker) > h2 ~ h3 {
+  margin-top: 1.7rem;
+  color: #526947;
+  font-size: 1.04rem;
+}
+.content:has(.toefl-marker) > h2 ~ blockquote {
+  margin-top: 1.1rem;
+  padding: 1.1rem 1.25rem .95rem;
+  border: 1px solid var(--toefl-line);
+  border-left: 4px solid #c59b61;
+  border-radius: 13px;
+  color: #2f493b;
+  background: var(--toefl-paper);
+  box-shadow: 0 7px 18px rgba(42, 65, 49, .05);
+}
+.content:has(.toefl-marker) > h2 ~ blockquote p { margin: .2rem 0; line-height: 1.85; }
+.content:has(.toefl-marker) > h2 ~ blockquote ul {
+  margin: .5rem 0 .1rem;
+  padding-left: 1.25rem;
+}
+.content:has(.toefl-marker) > h2 ~ blockquote li {
+  margin: .25rem 0;
+  color: var(--toefl-muted);
+  font-size: .92rem;
+}
+.content:has(.toefl-marker) > h2 ~ ul {
+  margin: 1rem 0 2rem;
+  padding: 1rem 1.2rem 1rem 2.4rem;
+  border: 1px solid var(--toefl-line);
+  border-radius: 13px;
+  background: rgba(250, 247, 238, .62);
+}
+.content:has(.toefl-marker) > h2 ~ ul li { margin: .55rem 0; }
+body[theme="dark"] .content:has(.toefl-marker) {
+  --toefl-ink: #e1ecdf;
+  --toefl-muted: #afbeb0;
+  --toefl-paper: #1d2b22;
+  --toefl-line: rgba(186, 205, 174, .17);
+}
+body[theme="dark"] .content:has(.toefl-marker) > blockquote,
+body[theme="dark"] .content:has(.toefl-marker) > h2 ~ ul { background: rgba(29, 43, 34, .88); }
+body[theme="dark"] .content:has(.toefl-marker) > blockquote,
+body[theme="dark"] .content:has(.toefl-marker) > h2 ~ blockquote { color: #dce6d4; }
+@media (max-width: 600px) {
+  .content:has(.toefl-marker) > h2 { font-size: 1.25rem; }
+  .content:has(.toefl-marker) > blockquote,
+  .content:has(.toefl-marker) > h2 ~ blockquote { padding: .9rem 1rem; }
+}
