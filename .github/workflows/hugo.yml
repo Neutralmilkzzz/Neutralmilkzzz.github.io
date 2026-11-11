@@ -53,7 +53,7 @@ jobs:
           test -f ./site/index.html
           test -f ./site/blog/index.html
           test -f ./site/posts/index.html
-          grep -q '/blog/' ./site/index.html
+          ! grep -q 'href="/blog/"' ./site/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
